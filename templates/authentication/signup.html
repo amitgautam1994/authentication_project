@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SignUp</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h3>Sign Up</h3>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            <label for="">Username</label>
+            <input type="text" id="username" name="username" placeholder="Create username only with letters and numbers">
+            </br>
+
+            <label for="">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter First Name">
+            </br>
+
+            <label for="">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter Last Name">
+            </br>
+
+            <label for="">Email</label>
+            <input type="eail" id="email" name="email" placeholder="Enter your email">
+            </br>
+
+            <label for="">Password</label>
+            <input type="password" id="pass1" name="pass1" placeholder="Enter you password">
+            </br>
+            
+            <label for="">Username</label>
+            <input type="password" id="pass2" name="pass2" placeholder="Confirm Password">
+            </br>
+            
+            <button type="submit">SignUp</button>
+        </form>
+
+    </body>
+</html>
